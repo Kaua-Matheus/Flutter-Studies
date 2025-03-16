@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class Segunda extends StatefulWidget {
@@ -89,15 +88,15 @@ class _SegundaState extends State<Segunda> {
                 if (result == 'empatou')
                   Image.asset('../lib/assets/images/icons8-aperto-de-maos-100.png', scale: 0.8),
                 Text('Você $result'),
-                GestureDetector(
-                  onTap: () => Navigator.pushNamed(context, '/'),
-                  child: Container(
-                    color: Colors.amber,
-                    width: 180,
-                    padding: EdgeInsets.all(9),
-                    child: Text("Jogar Novamente.", textAlign: TextAlign.center,)
+
+                SizedBox(
+                  width: 180,
+                  height: 30,
+                  child: FloatingActionButton(
+                    onPressed: () => Navigator.pushNamed(context, '/'),
+                    child: Text("Jogar novamente"),
                   ),
-                )
+                ),
               ],
             )
 
