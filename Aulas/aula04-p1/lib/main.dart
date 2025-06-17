@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                  Text("${variavelTela == ""? "0": variavelTela}", style: TextStyle(
+                  Text(variavelTela == ""? "0": variavelTela, style: TextStyle(
                       color: Colors.white,
                       fontSize: 80,
                       fontWeight: FontWeight.bold
